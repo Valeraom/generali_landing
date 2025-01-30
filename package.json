@@ -8,7 +8,9 @@
     "format": "prettier . --write",
     "lint": "eslint . --fix",
     "fix-style": "npm run format & npm run lint",
-    "scss": "sass src/styles/main.scss dist/main.css --watch"
+    "scss": "sass src/styles/main.scss dist/main.css --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "eslint": "^9.19.0",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",

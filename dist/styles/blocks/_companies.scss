@@ -1,0 +1,40 @@
+.companies {
+  padding: 30px 20px 20px 20px;
+
+  @include on-desktop {
+    padding-block: 72px 40px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+
+    font-family: 'Ubuntu', serif;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  &__imgs {
+    max-width: 660px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+
+    @include on-desktop {
+      gap: 38px;
+    }
+  }
+
+  &__img {
+    max-width: 114px;
+
+    @include on-desktop {
+      max-width: 220px;
+    }
+  }
+}

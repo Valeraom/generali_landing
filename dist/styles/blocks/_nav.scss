@@ -1,0 +1,45 @@
+.nav {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: none;
+
+  font-size: 20px;
+  line-height: 36px;
+
+  @include on-desktop {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    @include on-desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    color: $black;
+
+    transition: color $effectDuration;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &--burger {
+    display: block;
+
+    text-align: center;
+
+    @include on-desktop {
+      display: none;
+    }
+  }
+}
