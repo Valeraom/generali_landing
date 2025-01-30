@@ -7,7 +7,8 @@
     "prepare": "husky",
     "format": "prettier . --write",
     "lint": "eslint . --fix",
-    "fix-style": "npm run format & npm run lint"
+    "fix-style": "npm run format & npm run lint",
+    "scss": "sass src/styles/main.scss dist/main.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +20,13 @@
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
-    "prettier": "3.4.2"
+    "prettier": "3.4.2",
+    "sass": "^1.83.4"
   },
   "lint-staged": {
     "**/*": "npm run fix-style"
+  },
+  "dependencies": {
+    "swiper": "^11.2.1"
   }
 }

@@ -1,0 +1,25 @@
+$effectDuration: 0.3s;
+$accent-light: #d81e05;
+$accent: #d21d05;
+$accent-dark: #490900;
+$title-accent: #c22821;
+$button-hover: #ad1703;
+$border: #cc4238;
+$input: #f7f7f7;
+$input-text: #818181;
+$bg-transparent: #4a4a4ad1;
+$gradient: linear-gradient(
+  90deg,
+  #c91c04 0%,
+  $accent-light 33.33%,
+  $accent-dark 66.67%,
+  $accent-dark 100%
+);
+
+$bg-gradient: linear-gradient(180deg, $accent-light 0%, $accent-dark 100%);
+$blue: #0e69af;
+$blue-dark: #00062b;
+$grey: #d9d9d9;
+$grey-light: #ebebeb;
+$white: #fff;
+$black: #000;
