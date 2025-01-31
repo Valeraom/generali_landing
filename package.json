@@ -9,7 +9,7 @@
     "lint": "eslint . --fix",
     "fix-style": "npm run format & npm run lint",
     "scss": "sass src/styles/main.scss dist/main.css --watch",
-    "build": "sass src/styles/main.scss dist/main.css"
+    "build": "sass src/styles/main.scss public/main.css"
   },
   "keywords": [],
   "author": "",
